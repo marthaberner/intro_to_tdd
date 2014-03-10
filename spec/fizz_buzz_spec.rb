@@ -14,7 +14,7 @@ describe "FizzBuzz" do
   it "Replaces multiples of 3 with Fizz and multiples of 5 with Buzz" do
   fizzbuzz = FizzBuzz.new(15)
   expected  = [ 1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14,]
-
+  actual = fizzbuzz.arrayify
   end
-  end 
+  end
 
