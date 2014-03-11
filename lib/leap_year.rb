@@ -3,7 +3,7 @@ class Year
   @leap = leap
 end
   def yes?
-    frog = (@leap % 4) == 0
+    frog = (@leap % 4 == 0).true?
 
     i = 0
 
