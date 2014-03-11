@@ -7,7 +7,7 @@ describe "StringCalculator" do
     calc = String_calc.new()
 
     expected = 0
-    actual = calc.add("", "")
+    actual = calc.add(1, 2)
 
     expect(actual).to eq(expected)
 
