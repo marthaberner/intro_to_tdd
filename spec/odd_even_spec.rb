@@ -14,5 +14,11 @@ describe "OddEven" do
 
   expected = [1, "Even", 3, "Even", 5, "Even",]
   actual = chosen.run
-    end
+  end
+  it "Prints Even if a number in the array is even, and Odd if it is odd" do
+    chosen = Numbers.new(7)
+
+    expected = ["Odd", "Even", "Odd", "Even", "Odd", "Even", "Odd",]
+    actual = chosen.run
+  end
 end

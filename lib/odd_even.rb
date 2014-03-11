@@ -10,11 +10,14 @@ class Numbers
   i = 0
 
   while (i < duck.length)
-    if (duck[i] % 2 == 0)
+    if (duck[i].even? == true)
       duck[i] = "Even"
+    else
+      duck[i] = "Odd"
     end
+
     i += 1
-  end
+    end
   duck
+    end
   end
-  end 
