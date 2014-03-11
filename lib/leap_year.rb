@@ -3,18 +3,11 @@ class Year
   @leap = leap
 end
   def yes?
-    frog = (@leap % 4 == 0).true?
-
-    i = 0
-
-    while (i >= 0)
-      if frog == true
-        frog[i] = "It's a leap year!"
-      end
-
-      i -= 1
+    if(@leap % 4 == 0)
+      return "It's a leap year!"
+    else
+      "This is not a leap year."
     end
-    frog
+  end
+  end
 
-  end
-  end

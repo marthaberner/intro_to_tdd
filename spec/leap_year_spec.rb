@@ -7,7 +7,9 @@ describe "LeapYear"  do
   the_year = Year.new(2000)
 
   expected = "It's a leap year!"
+  actual = the_year.yes?
 
+  expect(actual).to eq(expected)
 
     end
 
