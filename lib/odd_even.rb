@@ -10,7 +10,7 @@ class Numbers
   i = 0
 
   while (i < duck.length)
-    if (duck[i].even? = true)
+    if (duck[i] % 2 == 0)
       duck[i] = "Even"
     else
       duck[i] = "Odd"
