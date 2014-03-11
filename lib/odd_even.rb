@@ -5,7 +5,7 @@ class Numbers
 
   def run
     duck = 1.upto(@the_number).to_a
-  end
+
 
   i = 0
 
@@ -14,6 +14,7 @@ class Numbers
       duck[i] = "Even"
     end
     i += 1
-    end
-duck
-end
+  end
+  duck
+  end
+  end 
