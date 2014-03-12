@@ -12,12 +12,21 @@ describe "StringCalculator" do
     expect(actual).to eq(expected)
 
   end
-  it "If the string is not empty, the method returns the sum of the numbers in the string." do
+  it "If the string is 1, 2, 7, the method returns 10." do
     calc = StringCalc.new()
 
-    expected = [1]
-    actual = calc.add("1")
+    expected = 10
+    actual = calc.add("1, 2, 7")
 
     expect(actual).to eq(expected)
-  end
-  end
+end
+
+it "allows user to specify delimiter" do
+  calc = StringCalc.new("+")
+
+  expected = 10
+  actual = calc.add("1+2+7")
+
+  expect(actual).to eq(expected)
+end
+end
