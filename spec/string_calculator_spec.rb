@@ -12,7 +12,7 @@ describe "StringCalculator" do
     expect(actual).to eq(expected)
 
   end
-  it "If the string is 1, 2, 7, the method returns 10." do
+  it "The method returns the sum of the numbers in the string." do
     calc = StringCalc.new()
 
     expected = 10
