@@ -1,9 +1,11 @@
 class String_calc
-def add(num1, num2)
+def add(num)
+
+
   if ""
     return 0
   else
-    return(num1 + num2)
+   return(num.to_a)
   end
 end
 end
