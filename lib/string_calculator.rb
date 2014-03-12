@@ -1,11 +1,12 @@
 class String_calc
 def add(num)
-
-
-  if ""
+  if num == " "
     return 0
   else
-   return(num.to_a)
+   my_array = (num).split(',').map(&:to_i)
+  return my_array.each do |x|
+     my_array.inject(0, &:+)
   end
 end
 end
+  end
