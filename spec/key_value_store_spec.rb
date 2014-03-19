@@ -25,7 +25,7 @@ describe KeyValueStore do
     key_value_store = KeyValueStore.new
     key_value_store.add("foo", 1000)
 
-    expect(key_value_store.key_list).to eq "foo"
+    expect(key_value_store.key_list).to eq ["foo"]
   end
 
   it "prints the list of many keys" do
@@ -33,16 +33,15 @@ describe KeyValueStore do
     key_value_store.add("foo", 1000)
     key_value_store.add("foo2", 1002)
 
-    expect(key_value_store.key_list).to eq "foo foo2"
+    expect(key_value_store.key_list).to eq ["foo","foo2"]
   end
 
   it "deletes all the key, value pairs from the store" do
     key_value_store = KeyValueStore.new
     key_value_store.add("foo", 1000)
     key_value_store.add("foo2", 1002)
-    key_value_store.clear_store
 
-    expect(key_value_store.key_list).to eq ""
+    expect(key_value_store.clear_store).to eq ({})
 
   end
 end

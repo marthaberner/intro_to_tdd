@@ -16,19 +16,10 @@ class KeyValueStore
   end
 
   def key_list
-    key_string = ""
-    @my_store.keys.each do |key|
-      key_string << key
-      key_string << " " unless key == @my_store.keys[-1]
-    end
-    key_string
+    @my_store.keys
   end
 
   def clear_store
-    all_keys = @my_store.keys
-    all_keys.each do |key|
-      delete(key)
+    @my_store.clear
     end
   end
-
-end
