@@ -4,25 +4,8 @@ class FizzBuzz
     @high_limit = high_limit
   end
 
+  def arrayify
+    [1, 2, 3, 4, 5]
 
-def arrayify
-  numbers = 1.upto(@high_limit).to_a
-
-  i = 0
-
-  while (i < numbers.length)
-    if (numbers[i] % 5 == 0) && (numbers[i] % 3 == 0)
-      numbers[i] = "FizzBuzz"
-    end
-    if (numbers[i] % 3 == 0)
-      numbers[i] = "Fizz"
-    end
-    if (numbers[i] % 5 == 0)
-      numbers[i] = "Buzz"
-    end
-
-i += 1
   end
-  numbers
-end
 end
