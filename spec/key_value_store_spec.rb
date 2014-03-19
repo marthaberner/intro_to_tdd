@@ -35,4 +35,14 @@ describe KeyValueStore do
 
     expect(key_value_store.key_list).to eq "foo foo2"
   end
+
+  it "deletes all the key, value pairs from the store" do
+    key_value_store = KeyValueStore.new
+    key_value_store.add("foo", 1000)
+    key_value_store.add("foo2", 1002)
+    key_value_store.clear_store
+
+    expect(key_value_store.key_list).to eq ""
+
+  end
 end

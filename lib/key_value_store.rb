@@ -24,4 +24,11 @@ class KeyValueStore
     key_string
   end
 
+  def clear_store
+    all_keys = @my_store.keys
+    all_keys.each do |key|
+      delete(key)
+    end
+  end
+
 end
