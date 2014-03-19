@@ -5,7 +5,6 @@ class FizzBuzz
   end
 
   def arrayify
-    [1, 2, 3, 4, 5]
-
+    my_array = 1.upto(@high_limit).to_a
   end
 end
