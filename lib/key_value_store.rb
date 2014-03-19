@@ -4,7 +4,7 @@ class KeyValueStore
   end
 
   def add(key, value)
-    @my_store["foo"] = 1000
+    @my_store[key] = value
   end
 
   def get(key)
@@ -14,4 +14,14 @@ class KeyValueStore
   def delete(key)
     @my_store.delete(key)
   end
+
+  def key_list
+    key_string = ""
+    @my_store.keys.each do |key|
+      key_string << key
+      key_string << " " unless key == @my_store.keys[-1]
+    end
+    key_string
+  end
+
 end

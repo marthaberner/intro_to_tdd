@@ -21,5 +21,18 @@ describe KeyValueStore do
     expect(key_value_store.get('foo')).to eq nil
   end
 
-  it "Prints a list of keys"
+  it "Prints a list of keys" do
+    key_value_store = KeyValueStore.new
+    key_value_store.add("foo", 1000)
+
+    expect(key_value_store.key_list).to eq "foo"
+  end
+
+  it "prints the list of many keys" do
+    key_value_store = KeyValueStore.new
+    key_value_store.add("foo", 1000)
+    key_value_store.add("foo2", 1002)
+
+    expect(key_value_store.key_list).to eq "foo foo2"
+  end
 end
