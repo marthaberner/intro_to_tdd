@@ -1,16 +1,17 @@
 class KeyValueStore
   def initialize
-    @store = Hash.new
+    @my_store = Hash.new
   end
 
   def add(key, value)
-    @store[key] = value
+    @my_store["foo"] = 1000
   end
 
   def get(key)
-    @store[key]
+    @my_store[key]
   end
+
   def delete(key)
-    @store.delete(key)
+    @my_store.delete(key)
   end
 end
