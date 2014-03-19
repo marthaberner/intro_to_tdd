@@ -27,13 +27,17 @@ describe "FizzBuzz" do
   fizzbuzz = FizzBuzz.new(14)
   expected  = [ 1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14,]
   actual = fizzbuzz.arrayify
+
+  expect(actual).to eq expected
+
   end
 it "Now, also replaces multiples of 3 and 5 with FizzBuzz" do
-  pending
   fizzbuzz = FizzBuzz.new(15)
 
   expected  = [ 1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
   actual = fizzbuzz.arrayify
+
+  expect(actual).to eq expected
   end
 end
 
